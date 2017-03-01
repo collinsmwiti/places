@@ -1,0 +1,10 @@
+#result {
+  display: block;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 20vh;
+}

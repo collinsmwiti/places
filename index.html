@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <title>Places you have been</title>
+</head>
+
+<body>
+  <h1 style="text-align: center">Places You Have Been </h1>
+  <!-- Styles -->
+  <style>
+    #chartdiv {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+  <!-- Resources -->
+  <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+  <script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+  <!-- HTML -->
+  <div id="chartdiv"></div>
+  <form id="countries">
+    <p> Please select the countries you have travelled to </p>
+    <textarea class="form-control" rows="3" id="input-countries"></textarea>
+    <p> Which year did you attend those countries?</p>
+    <textarea class="form-control" rows="3" id="input-year"></textarea>
+    <p> Which activities did you accomplish when you attended those countries?</p>
+    <textarea class="form-control" rows="3" id="input-activities"></textarea>
+    <p> What was your best locations within the countries you visited?</p>
+    <textarea class="form-control" rows="3" id="input-locations"></textarea>
+    <p> Kindly write brief notes about your adventure of visiting the countries?</p>
+    <textarea class="form-control" rows="3" id="input-notes"></textarea><br>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+  </form>
+  <div>
+    <ul id="result" style="list-style-type:none">
+      <li><span id="output-countries"></span></li>
+      <li><span id="output-year"></span></li>
+      <li><span id="output-activities"></span></li>
+      <li><span id="output-locations"></span></li>
+      <li><span id="output-notes"></span></li>
+    </ul>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
