@@ -1,6 +1,11 @@
+/*Styling my id result to enhance it appear in a block format*/
+
 #result {
   display: block;
 }
+
+
+/*Styling the body*/
 
 body {
   background-image: url(../images/background.jpg);
