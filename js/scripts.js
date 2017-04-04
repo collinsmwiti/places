@@ -1,4 +1,5 @@
-var map = AmCharts.makeChart( "chartdiv", {
+//Back end part to enhance functionality of the map//
+var map = AmCharts.makeChart("chartdiv", {
 
   "type": "map",
   "theme": "light",
@@ -17,18 +18,19 @@ var map = AmCharts.makeChart( "chartdiv", {
     "enabled": true,
     "position": "bottom-right"
   }
-} );
+});
 
+//Front-end part of the form to enhance countries submission//
 $(document).ready(function() {
-  $("form#countries").submit(function (event) {
+  $("form#countries").submit(function(event) {
     event.preventDefault();
 
     //select input values and assign to variables.
-  var inputCountries = $("textarea#input-countries").val();
-  var inputYear = $("textarea#input-year").val();
-  var inputActivities = $("textarea#input-activities").val();
-  var inputLocations = $("textarea#input-locations").val();
-  var inputNotes = $("textarea#input-notes").val();
+    var inputCountries = $("textarea#input-countries").val();
+    var inputYear = $("textarea#input-year").val();
+    var inputActivities = $("textarea#input-activities").val();
+    var inputLocations = $("textarea#input-locations").val();
+    var inputNotes = $("textarea#input-notes").val();
     //set text of the respective spans to the variables.
     $("span#output-countries").text(inputCountries);
     $("span#output-year").text(inputYear);
@@ -37,4 +39,4 @@ $(document).ready(function() {
     $("span#output-notes").text(inputNotes);
   });
 
-  });
+});
